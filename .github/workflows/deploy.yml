@@ -19,13 +19,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd /chartJs
+          cd chartJs
           npm run build
           npm run export
 
       - name: Build and export
         run: |
-          cd /chartJs
+          cd chartJs
           npm run build
           npm run export
 
