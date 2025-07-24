@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
 const isGithubPages = process.env.GITHUB_ACTIONS === 'true'
-module.exports = {
+const nextConfig = {
     output: 'export',
-    basePath: isGithubPages? '/chartJs/chartJs' : '',
-    assetPrefix: isGithubPages ? '/chartJs/chartJs': ''
+    basePath: isGithubPages? '/chartJs' : '',
+    assetPrefix: isGithubPages ? '/chartJs': ''
 }
+module.exports = nextConfig
