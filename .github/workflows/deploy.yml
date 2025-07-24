@@ -8,6 +8,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -20,8 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd chartJs
-          npm run build
-          npm run export
+          npm install
 
       - name: Build and export
         run: |
