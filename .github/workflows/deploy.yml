@@ -19,13 +19,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd chartJs/chartJs
+          cd /chartJs
           npm run build
           npm run export
 
       - name: Build and export
         run: |
-          cd chartJs/chartJs
+          cd /chartJs
           npm run build
           npm run export
 
@@ -33,4 +33,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{secrets.GITHUB_TOKEN}}
-          publish_dir: ./chartJs/chartJs/out
+          publish_dir: ./chartJs/out
